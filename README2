@@ -1,0 +1,18 @@
+Counts the number of hamiltonian paths on an n x m grid starting at the top left node and ending at the bottom right node.
+
+S - 0 - 0
+|   |   |
+0 - 0 - 0
+|   |   |
+E - 0 - 0
+
+Path must start at S and end at E. In this 3 x 3 sample, there are 2 possible paths.
+
+To use:
+javac solver.java
+java solver <grid height> <grid width>
+
+So, for example the above 3 x 3 grid would run as java solver 3 3. A 7 x 4 would run as java solver 7 4.
+For grids with more nodes than a 5 x 5 grid, you'll need to allocate more memory (~512m) with -Xmx512m.
+The program runs in reasonable time on my macbook up to a 9 x 6, but requires a lot of memory. I wouldn't suggest
+running grids larger than 7 x 7.
